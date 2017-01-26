@@ -1,0 +1,144 @@
+/*
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    border: solid thin #FF63AA;
+    background-color: #FF63AA;
+    text-align: center;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #FFDBEC;
+    border: solid thin #FFA3CD;
+      
+  }
+
+.mypost{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    color:#FF63AA;
+    font-size: 8px;
+    margin-left: 30%
+    
+}
+
+.mypost .flex_item:nth-child(1){
+    -webkit-align-self:flex-end;
+    -moz-align-self:flex-end;
+    -ms-align-self:flex-end;
+    align-self:flex-end;
+}
+
+.post{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    color:#FF63AA;
+    font-size: 8px;
+    margin-right: 30%
+    
+}
+
+.post .flex_item:nth-child(1){
+    width:10%;
+}
+
+
+.post .flex_item:nth-child(3){
+    -webkit-align-self:flex-end;
+    -moz-align-self:flex-end;
+    -ms-align-self:flex-end;
+    align-self:flex-end;
+}
+
+  #board {
+    position: absolute;
+    top: 40px;
+    bottom: 80px;
+    background-color: #FFF9FC;
+    width: 100%;
+    overflow: auto;
+  }
+
+  #board p {
+    padding: 10px;
+    margin: 5px;
+    border: solid thin #FFA3CD;
+    background-color: #ffffff;
+    border-radius: 5px;
+      font-size: 12px;
+      color:#000000;
+  }
+
+#icon img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+    border: solid thin #ffffff;
+    background-color: #ffffff;
+}
+
+#button{
+    padding: 5px;
+    margin: 10px;
+    color:#ffffff;
+    font-size: 14px;
+    background-color: #FF63AA;
+    border: solid thin #FF63AA;
+    border-radius: 5px;
+}
+
+textarea{
+    border: solid thin #FFA3CD;
+    resize: none;
+    border-radius: 5px;
+}
+
+.size{
+    width:30%;
+}
+
+.msg_area{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    color:#FF63AA;
+    font-size: 8px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#button{
+    height: 30px;
+    white-space: nowrap;
+}
+
+#msg{
+    height: 55px;
+}
+*/
