@@ -1,7 +1,6 @@
-
-
-
-
+<?php
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -29,6 +28,15 @@
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
+<?php
+  if(isset($_SESSION['err_check'])) {
+    print($_SESSION['err_check']);
+  } else {
+//    print("\$_SESSION['err_check']はセットされていません。<br>");
+  }
+    session_destroy();
+ ?>
+
 <form method="post" action="user_insert.php">
   <div class="jumbotron">
    <fieldset>
@@ -36,7 +44,7 @@
      <label>ユーザー名：<input type="text" name="name"></label><br>
      <label>ログインID：<input type="text" name="lid"></label><br>
      <label>ログインパスワード：<input type="text" name="lpw"></label><br>
-     <label>ユーザー種別：<input type="radio" name="kanri_flg" value="0"> 一般者
+     <label>ユーザー種別：<input type="radio" name="kanri_flg" value="0" checked="checked"> 一般者
 <input type="radio" name="kanri_flg" value="1"> 管理者</label><br>
      <input type="hidden" name="life_flg" value="0">
      <input type="submit" value="送信">

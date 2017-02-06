@@ -75,6 +75,7 @@ if($status==false){
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
+
 <div>
     <div class="container jumbotron">
     <ul class="first">
