@@ -29,6 +29,7 @@
    <fieldset>
     <legend>書籍登録</legend>
      <label>書籍名：<input type="text" name="book_title"></label><br>
+     <label>作家名：<input type="text" name="book_writer"></label><br>
      <label>書籍URL：<input type="text" name="book_url"></label><br>
      <label>書籍コメント<textArea name="book_comment" rows="4" cols="40"></textArea></label><br>
      <input type="submit" value="送信">

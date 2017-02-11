@@ -56,6 +56,7 @@ if($status==false){
    <fieldset>
     <legend>書籍登録</legend>
      <label>書籍名：<input type="text" name="book_title" value="<?=$res["book_title"]?>"></label><br>
+     <label>作家名：<input type="text" name="book_writer" value="<?=$res["book_writer"]?>"></label><br>
      <label>書籍URL：<input type="text" name="book_url" value="<?=$res["book_url"]?>"></label><br>
      <label>書籍コメント<textArea name="book_comment" rows="4" cols="40"><?=$res["book_comment"]?></textArea></label><br>
      <input type="hidden" name="id" value="<?=$id?>">

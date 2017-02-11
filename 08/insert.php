@@ -2,6 +2,7 @@
 //1. POSTデータ取得
 
 $book_title   = $_POST["book_title"];
+$book_writer   = $_POST["book_writer"];
 $book_url  = $_POST["book_url"];
 $book_comment = $_POST["book_comment"];
 
@@ -15,9 +16,10 @@ try {
 
 
 //３．データ登録SQL作成
-$stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, book_title, book_url, book_comment,
-created_at )VALUES(NULL, :book_title, :book_url, :book_comment, sysdate())");
+$stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, book_title, book_writer, book_url, book_comment,
+created_at )VALUES(NULL, :book_title, :book_writer, :book_url, :book_comment, sysdate())");
 $stmt->bindValue(':book_title', $book_title, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
+$stmt->bindValue(':book_writer', $book_writer, PDO::PARAM_STR);
 $stmt->bindValue(':book_url', $book_url, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':book_comment', $book_comment, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $status = $stmt->execute();  //実行

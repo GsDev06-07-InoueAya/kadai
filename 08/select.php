@@ -24,6 +24,7 @@ if($status==false){
     $view .= "<ul>";
     $view .= "<li>".$res["id"]."</li>";
     $view .= "<li>".$res["book_title"]."</li>";
+    $view .= "<li>".$res["book_writer"]."</li>";
     $view .= "<li><a href='".$res["book_url"]."'>URL</a></li>";
     $view .= "<li>".$res["book_comment"]."</li>";
     $view .= "<li>".$res["created_at"]."</li>";
@@ -75,7 +76,7 @@ if($status==false){
 <!-- Main[Start] -->
 <div>
     <div class="container jumbotron">
-    <ul class="first"><li>id</li><li>書籍名</li><li>URL</li><li>コメント</li><li>登録日時</li><li>編集/削除</li></ul>
+    <ul class="first"><li>id</li><li>書籍名</li><li>作家名</li><li>URL</li><li>コメント</li><li>登録日時</li><li>編集/削除</li></ul>
     <?=$view?>
     </div>
 </div>
