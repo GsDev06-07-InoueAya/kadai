@@ -103,7 +103,7 @@ if($status==false){
             <dl class="news-list clearfix">
                 <?=$view?>
             </dl>
-            <p class="news-note__more"><a href="news.html">ニュース一覧を見る</a></p>
+            <p class="news-note__more"><a href="news_list.php">ニュース一覧を見る</a></p>
         </div>
     </section>
     

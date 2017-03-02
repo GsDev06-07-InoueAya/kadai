@@ -141,6 +141,7 @@ body {
 }
 /*各セクションタイトル部分直下テキスト*/
 .section-note{
+    margin-left: 50px;
 
 }
 .contents-summary {
@@ -407,3 +408,4 @@ footer
 .btn-reading:hover{
     background:rgb(255, 131, 64);
 }
+
